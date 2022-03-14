@@ -9,8 +9,8 @@ namespace Keda.Samples.Dotnet.OrderGenerator
 {
     class Program
     {
-        private const string QueueName = "<queue-connection-string>";
-        private const string ConnectionString = "<queue-name>";
+        private const string QueueName = "orders";
+        private const string ConnectionString = "Endpoint=sb://kedans.servicebus.windows.net/;SharedAccessKeyName=keda-monitor;SharedAccessKey=ufY+TRza9Ofb7f0ze0ZXT0E0pSUH8NJpZBdAd7P5qgI=;EntityPath=orders";
 
         static async Task Main(string[] args)
         {
